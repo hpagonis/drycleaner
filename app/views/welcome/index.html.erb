@@ -1,0 +1,12 @@
+<h1>Καθαριστήριο Μιχάλης Παγώνης</h1>
+<p>Παρακαλώ εισάγεται αριθμό παραγγελίας</p>
+<%= form_for :order do |ord| %>
+<p>
+  <%= ord.label :id %>
+  <br>
+  <%= ord.text_field :id %>
+</p>
+<p>
+  <%= ord.submit %>
+</p>
+<% end %>
